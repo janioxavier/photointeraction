@@ -1,20 +1,28 @@
 .App {
-  text-align: center;
+  
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
 
-.App-header {
-  background-color: #fff;
+.App-header {  
+  background-color: #ccc;
   height: 10vh;
-  padding: 20px;
-  color: white;
+  padding: 5px;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.Logo{
+  float:left;
+  width:20%;
 }
+
+.Busca{
+  padding: 20px;
+  float:left;
+  width:70%;
+}
+
+.User-info{
+  float:right;
+  padding: 30px;
+}
+
