@@ -1,7 +1,34 @@
 import React, { Component } from 'react';
 import Modal from 'react-modal';
+import mapicon from './map-maker.PNG';
 
-class CriarPonto extends Component {
+class PontoSidebar extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            lugares : props.lugares,
+            favoritos : props.favoritos
+        }
+    }
+
+    render() {
+        return (
+            <div className="App-sidebar">
+            <h1> Meus lugares</h1>
+            <ul>                
+                {this.state.lugares}
+                <CriarPontoModal />
+            </ul>
+            <h1> Lugares Favoritos</h1>
+            <ul>
+                {this.state.favoritos}
+            </ul>
+            </div>
+        );
+    }
+}
+
+class CriarPontoModal extends Component {
     constructor(props) {
         super(props);
         this.state = { modalIsOpen: false }
@@ -31,17 +58,16 @@ class CriarPonto extends Component {
                         <form className="Form-elements">
 
                             <label>Dê um nome ao seu ponto virtual</label>
-                            <input type="text" required />   
+                            <input type="text"  required />   
 
-                            <label>Selecione o local do seu ponto </label>
-                            <input type="text" required />
+                            <label>Selecione o local do seu ponto <img src={mapicon} width="75" height="75" alt="Selecione o local"/></label>
+                            <input type="text" size="50" required />
                             <label>Informe o propósito do seu ponto </label>
                             <select >
                                 <option ></option>
                                 <option value="">Relacionamento</option>
                                 <option value="">Negócio</option>
-                                <option value="">Informativo</option>
-                                <option value="">Outro</option>
+                                <option value="">Informativo</option>                                
                             </select>
                             <label>Descreva seu ponto</label>
                             <textarea rows="10" cols="80"/>
@@ -56,4 +82,4 @@ class CriarPonto extends Component {
     }
 }
 
-export default CriarPonto;
+export default PontoSidebar;

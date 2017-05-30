@@ -23,23 +23,34 @@ background-color: #fff;
   height:90vh;
 }
 
+.App-sidebar-items>a {  
+  text-align: left;
+  padding: 5% 0%;
+  font-size: 2em;
+  margin: .67em 0;
+  display: block;
+  cursor:pointer;
+}
+
 .centered {
   text-align: center;
-  padding : 40px;
+  align-content: center;
+  justify-content: center;
+  display: block;
 }
 
 .Form-elements>label{
-  text-align: center;
+  font-family: sans-serif;
+  font-size: 14pt;  
   display: block;
-  padding: 40px;    
+  padding: 25px;    
 }
 
-
-.App-sidebar-items {  
+.App-adblock {
+  border: 1px solid black;
   text-align: center;
-  padding: 5% 20%;
-  font-size: 2em;
-  margin: .67em 0;
+  height: 10vh;
+  display:block;
 }
 
 .Logo{
