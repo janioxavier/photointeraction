@@ -1,24 +1,53 @@
 .App {
-  
+background-color: #fff;
 }
 
 
-.App-header {  
-  background-color: #ccc;
-  height: 10vh;
-  padding: 5px;
+.App-header { 
+  float:left; 
+  height: 10vh;  
   color: black;
+  width:100%;
+}
+
+
+.App-header-items {  
+  float:left;
+  padding:30px 300px;
+
+}
+
+.App-sidebar {
+  float:left;
+  width:20%;
+  height:90vh;
+}
+
+.centered {
+  text-align: center;
+  padding : 40px;
+}
+
+.Form-elements>label{
+  text-align: center;
+  display: block;
+  padding: 40px;    
+}
+
+
+.App-sidebar-items {  
+  text-align: center;
+  padding: 5% 20%;
+  font-size: 2em;
+  margin: .67em 0;
 }
 
 .Logo{
-  float:left;
-  width:20%;
+ padding:10px;
 }
 
 .Busca{
   padding: 20px;
-  float:left;
-  width:70%;
 }
 
 .User-info{

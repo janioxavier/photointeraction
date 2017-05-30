@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Logo from './components/Logo';
 import Busca from './components/Busca';
 import UserInfo from './components/UserInfo';
-import Breadcrumbs from './components/Breadcrumbs'
 
 
 import './App.css';
@@ -13,13 +12,11 @@ class Header extends Component {
     render() {
         return (
             <div className="App-header">
-                <div className="Logo">
+                <div className="App-header-items Logo">
                     <Logo />
-                    <Breadcrumbs />
                 </div>
 
-
-                <div className="Busca">
+                <div className="App-header-items">
                     <Busca />
                 </div>
 

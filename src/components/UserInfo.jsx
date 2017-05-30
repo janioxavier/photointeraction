@@ -1,12 +1,12 @@
 
 import React, { Component } from 'react';
+import usericon from './user-icon.jpg'
 
-const imgsrc = './logo.svg'
 
 class UserInfo extends Component {
    render() {
         return (
-            <img src={imgsrc} alt='user info'/>
+            <img src={usericon} height="50" width="50" alt='user info'/>
         );
     }
 }
