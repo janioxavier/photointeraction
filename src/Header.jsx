@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Logo from './components/Logo';
 import Busca from './components/Busca';
 import UserInfo from './components/UserInfo';
-
+import {Link} from 'react-router-dom';
 
 import './App.css';
 
@@ -11,9 +11,9 @@ import './App.css';
 class Header extends Component {
     render() {
         return (
-            <div className="App-header">
+            <div>
                 <div className="App-header-items Logo">
-                    <Logo />
+                    <Link to="/"><Logo /></Link>
                 </div>
 
                 <div className="App-header-items">

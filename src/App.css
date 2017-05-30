@@ -32,6 +32,8 @@ background-color: #fff;
   cursor:pointer;
 }
 
+
+
 .centered {
   text-align: center;
   align-content: center;
@@ -51,6 +53,13 @@ background-color: #fff;
   text-align: center;
   height: 10vh;
   display:block;
+}
+
+.App-close {
+  float:right;
+  display: block;
+  padding:5px;
+  cursor:pointer;
 }
 
 .Logo{
