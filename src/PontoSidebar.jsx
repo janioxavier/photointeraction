@@ -2,17 +2,19 @@ import React, { Component } from 'react';
 import Modal from 'react-modal';
 import mapicon from './map-maker.PNG';
 import closeicon from './close-icon.png';
+import { connect } from "react-redux"
+import { fetchPoints } from "./actions/pointActions"
 
-const lugares = [];
-const favoritos = [];
-
-class PontoSidebar extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            lugares: lugares,
-            favoritos: favoritos
-        }
+@connect((store)=> {
+    return{
+        user: store.points.user,
+        pointFeched: store.points.points,
+        points: store.points.points
+    }
+})
+class PontoSidebar extends Component {    
+    componentWillMount() {
+        this.props.dispatch(fetchPoints())
     }
 
     render() {
@@ -20,12 +22,12 @@ class PontoSidebar extends Component {
             <div>
                 <h1> Meus lugares</h1>
                 <ul>
-                    {this.state.lugares}
+                    {this.props}
                     <CriarPontoModal />
                 </ul>
                 <h1> Lugares Favoritos</h1>
                 <ul>
-                    {this.state.favoritos}
+                    {this.props}
                 </ul>
             </div>
         );

@@ -7,10 +7,16 @@
     "react-breadcrumbs": "^1.6.6",
     "react-dom": "^15.5.4",
     "react-modal": "^1.7.7",
+    "react-redux": "^5.0.5",
     "react-router": "^4.1.1",
-    "react-router-dom": "^4.1.1"
+    "react-router-dom": "^4.1.1",
+    "redux": "^3.6.0",
+    "redux-logger": "^3.0.6",
+    "redux-promise-middleware": "^4.3.0",
+    "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
+    "babel-plugin-transform-decorators": "^6.24.1",
     "react-scripts": "1.0.7"
   },
   "scripts": {
