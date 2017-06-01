@@ -33,7 +33,8 @@ export default class PointForm extends Component {
     }
 
     closeModal() {
-        this.setState({ modalIsOpen: false })        
+        this.setState({ modalIsOpen: false })
+        this.props.parent.fetchLugares()
     }
 
     render() {
@@ -59,17 +60,17 @@ export default class PointForm extends Component {
 
                             <label>Selecione o local do seu ponto <img src={mapicon} alt="Selecione o local" /></label>
                             Ou informe o CEP:<br />
-                            <Control.text model="point.cep" />
+                            <Control.text model="point.cep" required/>
 
                             <label>Informe o propósito do seu ponto </label>
-                            <Control.select model="point.proposito" >                                
+                            <Control.select model="point.proposito">                                                                
                                 <option value="relacionamento">Relacionamento</option>
                                 <option value="negocio">Negócio</option>
                                 <option value="informativo">Informativo</option>
                             </Control.select>
 
                             <label>Descreva seu ponto</label>
-                            <Control.textarea rows="5" cols="50" model="point.descricao" />
+                            <Control.textarea rows="5" cols="50" model="point.descricao " required/>
                             
                             <br /><br />
 
