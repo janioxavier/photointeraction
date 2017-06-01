@@ -1,0 +1,1 @@
+export default "http://rest.learncode.academy/api/phhotoointeraction"

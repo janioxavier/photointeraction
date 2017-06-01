@@ -17,6 +17,16 @@ const initialPointState = {
     proposito: ''
 }
 
+const inititalState = {
+    nome: '',
+    login: '',
+    senha: '',
+    idade: '',
+    logado: false,
+    pontos: [],
+    pontosFavoritos: [],
+}
+
 export default createStore(combineForms({
     point : initialPointState,
 

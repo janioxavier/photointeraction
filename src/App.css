@@ -1,5 +1,5 @@
 .App {
-background-color: #fff;
+background-color: gray;
 }
 
 
@@ -10,17 +10,23 @@ background-color: #fff;
   width:100%;
 }
 
-
 .App-header-items {  
   float:left;
   padding:30px 300px;
 
 }
 
+.App-content {
+  float: right;
+      height: 90vh;
+      width: 79%;
+      border: 1px solid black;
+}
+
 .App-sidebar {
   float:left;
   width:20%;
-  height:90vh;
+  height:100vh;
 }
 
 .App-sidebar-items>a {  

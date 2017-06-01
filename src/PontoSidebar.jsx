@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PointForm from './components/PointForm'
 import axios from 'axios'
+import restURL from './restURL'
+console.log(restURL)
 
 class PontoSidebar extends Component {
     constructor(props) {
@@ -17,7 +19,7 @@ class PontoSidebar extends Component {
     }
 
     fetchLugares() {
-        axios.get('http://rest.learncode.academy/api/photointeraction/point')
+        axios.get(restURL +'/point')
             .then(response => {
                 this.setState({ meusLugares: response.data })
             })

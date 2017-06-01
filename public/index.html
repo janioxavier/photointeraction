@@ -11,6 +11,10 @@
     -->
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
   <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  
+  <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnXKwC0Ukpub5FUX7SpZCbpvj-U0Fsx0U&callback=initMap"></script>-->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD11rLJZPkk9eg4IxseDFqAIppRIdC99Xk&libraries=places"></script>
+
   <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -27,31 +31,7 @@
 </head>
 
 <body>
-  <style>
-    .map {
-      float: right;
-      height: 90vh;
-      width: 79%;
-      border: 1px solid;
-    }
-  </style>
 
-  <script>
-    function initMap() {
-      var natal = { lat: -5.805925720675717, lng: -35.23071298375726 };
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 8,
-        center: natal
-      });
-      var marker = new google.maps.Marker({
-        position: natal,
-        map: map
-      });
-    }
-  </script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnXKwC0Ukpub5FUX7SpZCbpvj-U0Fsx0U&callback=initMap">
-
-  </script>
   <div id="root"></div>
   <!--
       This HTML file is a template.
@@ -63,7 +43,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  <div class="map" id="map"></div>
 
 </body>
 
