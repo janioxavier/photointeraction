@@ -1,3 +1,5 @@
+import axios from "axios"
+
 export default function reducer(state = {
     points: [],
     feching: false,
@@ -18,13 +20,11 @@ export default function reducer(state = {
                 feching: false,
                 feched: true,
                 points: action.payload,
-            }
+            }        
         }
         case "ADD_POINT": {
-            return {
-                ...state,
-                points: [...state.points, action.payload],
-            }
+            axios.post('http://rest.learncode.academy/api/photointeraction/point',action.payload)
+
         }
         // ADICIONAR ATUALIZAR E DELETAR        
     }
