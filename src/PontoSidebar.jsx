@@ -9,8 +9,7 @@ class PontoSidebar extends Component {
         this.state = {
             meusLugares: [],
             favoritos: []
-        }
-        
+        }   
     }
 
     componentDidMount() {
@@ -34,7 +33,7 @@ class PontoSidebar extends Component {
                 <h1> Meus lugares</h1>
                 <ul>
                     {lugares}
-                    <PointForm />
+                    <PointForm parent={this}/>
                 </ul>
                 <h1> Lugares Favoritos</h1>
                 <ul>
