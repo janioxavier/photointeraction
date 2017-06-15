@@ -6,6 +6,8 @@ import PontoSidebar from './components/PontoSidebar'
 import Content from './components/Content'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
+import ModalSigin from './components/ModalSignin'
+
 var NotFound = () => {
   <div>Not Found</div>
 }
@@ -16,13 +18,16 @@ class App extends Component {
     super(props)
     this.state = {
       lugares : []
-    }    
+    }
   }
 
   render() {
-    return (
-      <Router>
+    const isUserLoggedIn = false
+
+    return (      
+      <Router>        
       <div className="App">
+        <ModalSigin abrir={!isUserLoggedIn}/>
         <div className="App-header">
           <Header />
         </div>

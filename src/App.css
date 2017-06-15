@@ -2,6 +2,15 @@
 background-color: gray;
 }
 
+.centro {
+    width:500px;
+    height:300px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-50px;
+    margin-left:-50px;
+}
 
 .App-header { 
   float:left; 
