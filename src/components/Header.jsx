@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Logo from './components/Logo';
-import Busca from './components/Busca';
-import UserInfo from './components/UserInfo';
+import Logo from './Header/Logo';
+import Busca from './Header/Busca';
+import UserInfo from './Header/UserInfo';
 import {Link} from 'react-router-dom';
 
-import './App.css';
+import '../App.css';
 
 
 

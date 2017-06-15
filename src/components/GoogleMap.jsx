@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
-import maker from './maker-maps.jpg'
+//import maker from './maker-maps.jpg'
 import axios from 'axios'
 import restURL from '../restURL'
 

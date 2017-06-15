@@ -1,21 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
-import Header from './Header';
-import Sidebar from './Sidebar'
+import Header from './components/Header';
+import Sidebar from './components/Sidebar'
 import PontoSidebar from './PontoSidebar'
 import Content from './Content'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import axios from 'axios'
-import restURL from './restURL'
-
-const lugares = [];
-const favoritos = [];
 
 var NotFound = () => {
   <div>Not Found</div>
 }
 
 class App extends Component {
+  
   constructor(props) {
     super(props)
     this.state = {

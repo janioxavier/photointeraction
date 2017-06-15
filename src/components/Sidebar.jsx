@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 // import CriarPonto from './components/CriarPonto'
-import Filtro from './components/Filtro';
-import bell from './bell.PNG';
-import history from './history.PNG';
-import map_maker from './map-maker.PNG';
-import group_people from './group-people.PNG';
+import Filtro from './Filtro';
+import bell from './Sidebar/bell.PNG';
+import history from './Sidebar/history.PNG';
+import map_maker from './Sidebar/map-maker.PNG';
+import group_people from './Sidebar/group-people.PNG';
 import {Link} from 'react-router-dom';
 
 
