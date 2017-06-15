@@ -37,6 +37,7 @@ export default class GoogleMaps extends Component {
   }
 
   render() {
+    setTimeout(() => {this.fetchLugares()});
     const points = this.state.points.map((point) =>
       <MapItem key={point.id} lat={point.lat} lng={point.lng} text='[O]' />
     )
