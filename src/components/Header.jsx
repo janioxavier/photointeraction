@@ -6,14 +6,12 @@ import {Link} from 'react-router-dom';
 
 import '../App.css';
 
-
-
 class Header extends Component {
     render() {
         return (
             <div>
                 <div className="App-header-items Logo">
-                    <Link to="/"><Logo /></Link>
+                    <Link to="/"><Logo nome="PhotoInteraction"/></Link>
                 </div>
 
                 <div className="App-header-items">
