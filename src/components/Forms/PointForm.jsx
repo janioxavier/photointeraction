@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import axios from "axios"
 import Modal from 'react-modal';
-import mapicon from './Sidebar/map-maker.PNG';
-import closeicon from './close-icon.png';
+import mapicon from '../Sidebar/map-maker.PNG';
+import closeicon from '../close-icon.png';
 import { Control, LocalForm, actions } from 'react-redux-form'
-import restURL from "../restURL"
+import restURL from "../../restURL"
 //import GoogleMapsModal from './GoogleMapsModal'
 import PlacesAutocomplete, { geocodeByAddress, getLatLng } from 'react-places-autocomplete'
 

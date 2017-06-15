@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar'
-import PontoSidebar from './PontoSidebar'
-import Content from './Content'
+import PontoSidebar from './components/PontoSidebar'
+import Content from './components/Content'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 var NotFound = () => {

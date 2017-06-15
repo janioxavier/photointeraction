@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 //import maker from './maker-maps.jpg'
 import axios from 'axios'
-import restURL from '../restURL'
+import restURL from '../../restURL'
 
 function MapItem(props) {
   return <div style={{ width: '10px', height: '10px', backgroundColor: 'red', color: 'red' }}><img src='' alt='' /></div>
