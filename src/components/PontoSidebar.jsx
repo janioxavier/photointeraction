@@ -11,11 +11,18 @@ class PontoSidebar extends Component {
         this.state = {
             meusLugares: [],
             favoritos: []
-        }   
+        }
+        this.addLugar = this.addLugar.bind(this)
     }
 
     componentDidMount() {
         this.fetchLugares()
+    }
+
+    addLugar(lugar) {
+        const lugares = this.state.meusLugares
+        lugares.push(lugar)                
+        this.setState({ meusLugares: lugares})        
     }
 
     fetchLugares() {
@@ -26,7 +33,6 @@ class PontoSidebar extends Component {
     }
 
     render() {
-
         const lugares = this.state.meusLugares.map((lugar) =>
             <li key={lugar.id}>{lugar.nome}</li>)
 
@@ -35,7 +41,7 @@ class PontoSidebar extends Component {
                 <h1> Meus lugares</h1>
                 <ul>
                     {lugares}
-                    <PointForm parent={this}/>
+                    <PointForm addLugar={this.addLugar}/>
                 </ul>
                 <h1> Lugares Favoritos</h1>
                 <ul>

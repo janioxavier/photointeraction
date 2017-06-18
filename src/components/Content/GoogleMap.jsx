@@ -26,21 +26,20 @@ export default class GoogleMaps extends Component {
     axios.get(restURL + '/point')
       .then(response => {
         var validsPoints = []
-        var points = response.data.map((point) => {
+        response.data.map((point) => {
           if (point.lat !== undefined && point.lat !== undefined) {
             validsPoints.push(point)
           }
-        })
-        console.log('validPoints', validsPoints)
+        })        
         this.setState({ points: validsPoints })                
       })
   }
 
   render() {
+    setTimeout(() => {this.fetchLugares()}, 5000);
     const points = this.state.points.map((point) =>
       <MapItem key={point.id} lat={point.lat} lng={point.lng} text='[O]' />
-    )
-    console.log(points)
+    )    
 
     return (
       <GoogleMapReact

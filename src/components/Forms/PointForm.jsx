@@ -38,7 +38,8 @@ export default class PointForm extends Component {
             .then(latLng => {
                 const lat = latLng.lat
                 const lng = latLng.lng
-                point = { ...point, lat, lng }                
+                point = { ...point, lat, lng }
+                this.props.addLugar(point)                                
                 actions.submit('point', postPoint(point))
                 console.log('Success', latLng)
             })
@@ -55,7 +56,7 @@ export default class PointForm extends Component {
 
     closeModal() {
         this.setState({ modalIsOpen: false })
-        this.props.parent.fetchLugares()
+        //this.props.parent.fetchLugares()
     }
 
     openMapsModal() {
