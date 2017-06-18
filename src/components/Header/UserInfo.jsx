@@ -4,9 +4,9 @@ import usericon from './user-icon.jpg'
 
 
 class UserInfo extends Component {
-   render() {
+    render() {
         return (
-            <img src={usericon} height="50" width="50" alt='user info'/>
+            <img src={usericon} height="50" width="50" alt='user info' />
         );
     }
 }

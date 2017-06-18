@@ -15,7 +15,7 @@ export default class GoogleMaps extends Component {
       center: { lat: -5.7792569, lng: -35.20091600000001 },
       zoom: 11,
       points: []
-    }    
+    }
   }
 
   componentDidMount() {
@@ -30,8 +30,8 @@ export default class GoogleMaps extends Component {
           if (point.lat !== undefined && point.lat !== undefined) {
             validsPoints.push(point)
           }
-        })        
-        this.setState({ points: validsPoints })                
+        })
+        this.setState({ points: validsPoints })
       })
   }
 
@@ -39,7 +39,7 @@ export default class GoogleMaps extends Component {
     setTimeout(() => {this.fetchLugares()}, 5000);
     const points = this.state.points.map((point) =>
       <MapItem key={point.id} lat={point.lat} lng={point.lng} text='[O]' />
-    )    
+    )
 
     return (
       <GoogleMapReact

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import PointForm from './Forms/PointForm'
+import PointForm from '../Forms/PointForm'
 import axios from 'axios'
-import restURL from '../restURL'
+import restURL from '../../restURL'
 console.log(restURL)
 
 class PontoSidebar extends Component {
@@ -21,11 +21,12 @@ class PontoSidebar extends Component {
 
     addLugar(lugar) {
         const lugares = this.state.meusLugares
-        lugares.push(lugar)                
-        this.setState({ meusLugares: lugares})        
+        lugares.push(lugar)
+        this.setState({ meusLugares: lugares})
     }
 
     fetchLugares() {
+
         axios.get(restURL +'/point')
             .then(response => {
                 this.setState({ meusLugares: response.data })

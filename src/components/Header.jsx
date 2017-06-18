@@ -2,26 +2,27 @@ import React, { Component } from 'react';
 import Logo from './Header/Logo';
 import Busca from './Header/Busca';
 import UserInfo from './Header/UserInfo';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import '../App.css';
 
 class Header extends Component {
     render() {
         return (
-            <div>
-                <div className="App-header-items Logo">
-                    <Link to="/"><Logo nome="PhotoInteraction"/></Link>
+            <header className="flex-container header">
+
+                <Link to="/"><Logo className="flex-item" nome="PhotoInteraction" /></Link>
+
+                <Busca className="flex-item" />
+
+                <div className="flex-iten">
+                    <h3 >{}</h3>
                 </div>
 
-                <div className="App-header-items">
-                    <Busca />
-                </div>
+                <UserInfo className="flex-item" nomeUsuario={this.props.nomeUsuario} />
 
-                <div className="User-info">
-                    <UserInfo />
-                </div>
-            </div>
+            </header>
+
         );
     }
 }
