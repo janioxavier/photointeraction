@@ -16,10 +16,10 @@ class Header extends Component {
                 <Busca className="flex-item" />
 
                 <div className="flex-iten">
-                    <h3 >{}</h3>
+                    <h3 >{this.props.nomeUsuario}</h3>
                 </div>
 
-                <UserInfo className="flex-item" nomeUsuario={this.props.nomeUsuario} />
+                <UserInfo className="flex-item" />
 
             </header>
 

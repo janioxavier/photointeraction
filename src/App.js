@@ -50,7 +50,7 @@ class App extends Component {
     return (
       <Router>
         <section>
-          {/*<ModalSigin abrir={!isUserLoggedIn} setUser={this.setUser} />*/}
+          <ModalSigin abrir={!isUserLoggedIn} setUser={this.setUser} />
 
           <Header nomeUsuario={username} />
 
