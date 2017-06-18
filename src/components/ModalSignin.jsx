@@ -8,6 +8,7 @@ export default class ModalSignin extends Component {
   constructor(props) {
     super(props)
     this.state = { isModalOpen: props.abrir }
+    this.closeModal = this.closeModal.bind(this)
   }
 
   openModal() {
@@ -20,14 +21,13 @@ export default class ModalSignin extends Component {
 
   render() {
     return (
-      <Modal isOpen={this.state.isModalOpen} onClose={() => this.closeModal()}>
-        <img src={closeicon} width="42"
-                            className="App-close" onClick={this.closeModal.bind(this)} alt="no" />
+      <Modal isOpen={this.state.isModalOpen}
+        onClose={() => this.closeModal()} contentLabel="Modal">
         <div className="centro">
           <h1>Entre com a sua conta</h1>
-          <br/>          
-          <SigninGoogleButton />
-          
+          <br />
+          <SigninGoogleButton setUser={this.props.setUser} closeModal={this.closeModal}/>
+
         </div>
       </Modal>
     )
