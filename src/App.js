@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar/Sidebar'
 import PontoSidebar from './components/Sidebar/PontoSidebar'
+import LugarSidebar from './components/Sidebar/LugarSidebar'
 import Content from './components/Content'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import axios from "axios"
@@ -50,7 +51,9 @@ class App extends Component {
     return (
       <Router>
         <section>
-          <ModalSigin abrir={!isUserLoggedIn} setUser={this.setUser} />
+          {
+            //<ModalSigin abrir={!isUserLoggedIn} setUser={this.setUser} />
+          }
 
           <Header nomeUsuario={username} />
 
@@ -58,6 +61,7 @@ class App extends Component {
           <Switch>
             <Route path="/" exact component={Sidebar} />
             <Route path="/pontos" component={PontoSidebar} />
+            <Route path="/lugar/:id" component={LugarSidebar} />
             <Route component={NotFound} />
           </Switch>
 

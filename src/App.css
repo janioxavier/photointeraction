@@ -33,7 +33,31 @@
   display: -webkit-flex;
   -webkit-justify-content: space-between;
     justify-content: space-between;
+}
 
+.flex-light-container {
+  display: flex;
+  -webkit-justify-content: space-around;
+    justify-content: space-around;
+}
+
+.flex-normal-container {
+  display: flex;
+}
+
+.content-foto {
+  border : 1px solid black;
+  height: 15vh;
+  margin: auto;
+}
+
+.flex-column-container {
+  display: flex;
+  flex-direction: row;
+  display: -webkit-flex;
+  -webkit-justify-content: space-between;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .header {

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PointForm from '../Forms/PointForm'
 import axios from 'axios'
 import restURL from '../../restURL'
-console.log(restURL)
+import { Link } from 'react-router-dom';
 
 class PontoSidebar extends Component {
     constructor(props) {
@@ -35,7 +35,10 @@ class PontoSidebar extends Component {
 
     render() {
         const lugares = this.state.meusLugares.map((lugar) =>
-            <li key={lugar.id}>{lugar.nome}</li>)
+            <Link key={lugar.id} to={"/lugar/"+lugar.id}>
+                <li >{lugar.nome}</li>
+            </Link>
+        )
 
         return (
             <div>
