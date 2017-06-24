@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PointForm from '../Forms/PointForm'
 import LugarAPI, {getEndereco} from './Lugares/LugarAPI'
+import FotoAPI from './Lugares/FotoAPI'
 import chat from './chat-image.png'
 import happy_face from './happy-face.jpg'
 import bored_face from './bored-face.jpg'
@@ -94,7 +95,7 @@ export default class LugarSidebar extends Component {
                             Nenhuma foto inserida
                         </header>
                         <br/>
-                        <a>Adicionar nova foto</a>
+                        <input type="file"/>
                     </section>
                 </article>
 

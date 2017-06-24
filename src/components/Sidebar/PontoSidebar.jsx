@@ -49,6 +49,7 @@ class PontoSidebar extends Component {
                 </ul>
                 <h1> Lugares Favoritos</h1>
                 <ul>
+                    Nenhum ponto favorito
                 </ul>
             </div>
         );

@@ -85,6 +85,10 @@
   display: block;
 }
 
+.hand {
+  cursor: pointer;
+}
+
 .Form-elements>label{
   font-family: sans-serif;
   font-size: 14pt;

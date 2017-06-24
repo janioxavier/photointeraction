@@ -39,7 +39,7 @@ export default class PointForm extends Component {
                 const lat = latLng.lat
                 const lng = latLng.lng
                 point = { ...point, lat, lng }
-                this.props.addLugar(point)                                
+                this.props.addLugar(point)
                 actions.submit('point', postPoint(point))
                 console.log('Success', latLng)
             })
@@ -79,7 +79,7 @@ export default class PointForm extends Component {
         return (
             <div className="App-siderbar-items">
                 <br />
-                <a onClick={this.openModal}>Criar Ponto</a>
+                <a className="hand" onClick={this.openModal}>Criar Ponto</a>
                 <Modal
                     isOpen={this.state.modalIsOpen}
                     contentLabel="Modal"
