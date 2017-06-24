@@ -3,4 +3,5 @@
  Para rodar, basta instalar a versão mais recente do node, entrar no diretório da aplicação e digitar na linha de comando:
 
  npm install
+
  npm start
