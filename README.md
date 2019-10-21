@@ -5,3 +5,5 @@
  npm install
 
  npm start
+
+Versão do node deve ser a mais recente
